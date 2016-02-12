@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Roller //utilizes Dice 2
+{
+   public static void main (String[] args) {
+       Scanner scan = new Scanner(System.in);
+       
+       System.out.println("Please enter the number of sides that you want on your dice");
+       int x = scan.nextInt();
+       
+       Dice2 dice = new Dice2(x);
+        for(int y = 1; y <= 10; y++)
+       {
+           System.out.println(dice);
+           dice.roll();
+       }
+   }
+}
