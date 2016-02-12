@@ -1,0 +1,21 @@
+import java.util.Random;
+public class Dice2
+{
+    Random rand = new Random();
+    private int numSides;
+    private int p;
+    
+    public Dice2(int sides) {
+        numSides = sides;
+        roll();
+    }
+    
+    public int roll() {
+        p = rand.nextInt(numSides) + 1;
+        return p;
+    }
+    
+    public String toString() {
+        return "" + p;
+    }
+}
