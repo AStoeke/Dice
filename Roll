@@ -1,0 +1,13 @@
+public class Roll //utilizes Dice
+{
+   public static void main (String[] args)
+   {
+       Dice dice = new Dice();
+       
+       for(int x = 1; x <= 10; x++)
+       {
+           System.out.println(dice);
+           dice.roll();
+       }
+   }
+}
