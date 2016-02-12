@@ -1,0 +1,19 @@
+import java.util.Random;
+public class Dice
+{
+   Random rand = new Random();
+   private int x;
+   
+   public Dice() {
+       roll();
+   }
+   
+   public int roll() {
+       x = (rand.nextInt(6) + 1);
+       return x;
+   }
+   
+   public String toString() {
+       return "You rolled a " + x;
+   }
+}
